@@ -11,42 +11,42 @@ Acompañamos al usuario en su primera toma de contacto con una experiencia visua
 
 | Paso 1 | Paso 2 | Paso 3 |
 | :---: | :---: | :---: |
-| ![Bienvenida 1](capturas/bienvenida1.png) | ![Bienvenida 2](capturas/bienvenida2.png) | ![Bienvenida 3](capturas/bienvenida3.png) |
+| <img src="capturas/bienvenida1.png" width="250"> | <img src="capturas/bienvenida2.png" width="250"> | <img src="capturas/bienvenida3.png" width="250"> |
 
 ---
 
-### Gestión de Hábitos
+### Gestión y Creación
 Interfaz limpia para el día a día, con calendario semanal y tarjetas interactivas con feedback háptico.
 
 | Tus Hábitos | Crear Hábito |
 | :---: | :---: |
-| ![Lista de Hábitos](capturas/listahabitos.png) | ![Crear Hábito](capturas/crearhabito.png) |
+| <img src="capturas/listahabitos.png" width="250"> | <img src="capturas/crearhabito.png" width="250"> |
 
 ---
 
 ### Análisis y Acceso Rápido
-Visualización de datos mediante Swift Charts y acceso inmediato desde el sistema.
+Visualización de datos mediante Swift Charts y acceso inmediato desde el sistema. Para que el Widget luzca mejor, lo hemos emparejado con la vista de estadísticas.
 
-| Estadísticas y Progreso | Widget de Pantalla de Inicio |
+| Estadísticas y Progreso | Widget Interactivo |
 | :---: | :---: |
-| ![Estadísticas](capturas/estadisticas.png) | ![Widget](capturas/widget.png) |
+| <img src="capturas/estadisticas.png" width="250"> | <img src="capturas/widget.png" width="380"> |
 
 ---
 
 ## 🛠 Tecnologías Utilizadas
 
 * **SwiftUI**: Para una interfaz moderna y reactiva.
-* **SwiftData**: Persistencia de datos eficiente y sincronizada.
-* **WidgetKit**: Widget para la pantalla de inicio con soporte para App Groups.
-* **Swift Charts**: Gráficas de rendimiento dinámicas.
-* **UserNotifications**: Sistema de recordatorios locales programables.
+* **SwiftData**: Persistencia de datos eficiente y sincronizada mediante `ModelContainer`.
+* **WidgetKit**: Widget para la pantalla de inicio con soporte para App Groups (`group.com.AuraHabits`).
+* **Swift Charts**: Gráficas de rendimiento dinámicas para el seguimiento de progreso.
+* **UserNotifications**: Sistema de recordatorios locales programables gestionado por `NotificationManager`.
 
 ## 🚀 Funcionalidades Clave
 
-* **Calendario Semanal Interactivo**: Navegación sencilla entre días.
-* **Cálculo de Rachas**: Lógica robusta para medir la constancia.
-* **Microinteracciones**: Feedback háptico y animaciones de confeti al completar tareas.
-* **Onboarding Dinámico**: Introducción visual al primer uso de la aplicación.
+* **Calendario Semanal Interactivo**: Navegación sencilla entre días mediante `WeeklyCalendarView`.
+* **Cálculo de Rachas**: Lógica robusta en el modelo `Habit` para medir la constancia diaria.
+* **Microinteracciones**: Feedback háptico y animaciones de confeti (`ConfettiModifier`) al completar tareas.
+* **Onboarding Dinámico**: Introducción visual al primer uso de la aplicación para guiar al usuario.
 
 ---
 
